@@ -1,3 +1,4 @@
+
 const month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 
@@ -48,3 +49,8 @@ function ageCalculator() {
     document.getElementById('month').innerHTML = otpmonth;
     document.getElementById('day').innerHTML = otpday;
 }
+
+
+/* document.getElementById('year').innerHTML = '23';
+document.getElementById('month').innerHTML = '23';
+ document.getElementById('day').innerHTML = '23'; */
