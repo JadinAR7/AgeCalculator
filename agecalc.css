@@ -1,0 +1,102 @@
+.body {
+    background-color: rgb(252, 249, 249);
+}
+
+
+.container {
+    margin-top: 10%;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom-right-radius: 200px;
+
+}
+
+.col {
+
+    width: 40%;
+}
+
+.col h6 {
+    margin-top: 2rem;
+
+}
+
+.col h6 {
+    color: gray;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 5rem;
+}
+
+
+/* if there were different types of input I would use the 'rounded class' on the input elements */
+input {
+    border-radius: 5px;
+    width: 30%;
+    border: 1px lightgray solid;
+    text-align: center;
+
+}
+
+.date-text {
+    font-size: 28px;
+    text-align: left;
+    padding-left: 1rem;
+    font-weight: 800;
+    border: solid 2px black;
+    margin-left: 5rem;
+}
+
+.hr-line {
+    margin-top: 4rem;
+    width: 80%;
+    margin-left: 2rem;
+}
+
+.hr {
+    display: flex;
+    width: 110%;
+}
+
+.button {
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(104, 32, 221);
+    cursor: pointer;
+}
+
+.hr-circle:hover {
+    background-color: rgb(104, 32, 221);
+    cursor: pointer;
+}
+
+.arrow {
+    margin: 1rem 1rem 1rem 1.2rem;
+    color: white;
+}
+
+.output {
+    display: flex;
+}
+
+.year,
+.month,
+.day {
+    display: flex;
+    margin-left: 5rem;
+    font-size: 80px;
+}
+
+.year p,
+.month p,
+.day p {
+    margin-left: 5rem;
+}
+
+span {
+    color: blueviolet;
+}
