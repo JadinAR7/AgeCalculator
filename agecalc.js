@@ -1,4 +1,3 @@
-
 const month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 
@@ -37,8 +36,8 @@ function ageCalculator() {
         otpyear = 0;
         otpmonth = m2 - m1;
     }
-    if ((m1 > m2) || (y1 > y2)) {
-        alert('invalid input');
+    if ((m1 > m2) && (y1 >= y2)) {
+        alert('invalid input, not born yet');
         return;
     }
 
@@ -49,8 +48,3 @@ function ageCalculator() {
     document.getElementById('month').innerHTML = otpmonth;
     document.getElementById('day').innerHTML = otpday;
 }
-
-
-/* document.getElementById('year').innerHTML = '23';
-document.getElementById('month').innerHTML = '23';
- document.getElementById('day').innerHTML = '23'; */
