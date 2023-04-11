@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="agecalc.css">
+  <link rel="stylesheet" href="agecalc.js">
+  <link rel="stylesheet" href='../node_modules/bootstrap/dist/css/bootstrap.min.css'>
+
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+
+<body class="body">
+  <script src="agecalc.js" defer></script>
+
+  <div class="container">
+    <div class="row ">
+      <div class="col">
+        <h6>DAY</h6>
+      </div>
+      <div class="col">
+        <h6>MONTH</h6>
+      </div>
+      <div class="col">
+        <h6>YEAR</h6>
+      </div>
+    </div>
+
+    <!----------------------------Input section---------------------->
+
+    <div class="row">
+      <form class="col">
+        <div class="form-group">
+          <input type="text" class="date-text" placeholder="DD" id="bday">
+        </div>
+      </form>
+      <form class=" col">
+        <div class="form-group">
+          <input type="text" class="date-text" placeholder="MM" id="bmonth">
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <input type="text" class="date-text" placeholder="YYYY" id="byear">
+        </div>
+      </form>
+    </div>
+
+    <!----------------------------HR Line & Image------------------->
+
+    <div class="hr">
+      <hr class="hr-line">
+
+      <div class=>
+        <button onclick="ageCalculator()" class="button">
+          <img class="arrow" src="assets/images/icon-arrow.svg" alt="arrow">
+        </button>
+      </div>
+    </div>
+
+    <!---------------------------Birthday Outputs-------------------->
+
+    <div class="row">
+      <div class="year">
+        <span id="year">--</span>
+        <p>years</p>
+      </div>
+      <div class="month">
+        <span id="month">--</span>
+        <p>month</p>
+      </div>
+      <div class="day">
+        <span id="day">--</span>
+        <p>day</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Jadin</a>.
+    </div>
+  </footer> -->
+
+</body>
+
+</html>
