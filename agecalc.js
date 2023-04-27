@@ -18,24 +18,32 @@ function ageCalculator() {
     let otpmonth = parseFloat(m2) - parseFloat(m1) + parseFloat(12);
     let otpyear = y2 - y1 - parseFloat(1);
 
+
+
+
     if (otpday < 0) {
         otpday = otpday * otpday;
         otpmonth = otpmonth - 1;
     }
 
     if (otpyear == 0) {
-        otpday = d1 - d2;
+        otpday = d2 - d1;
+    }
+
+    if ((d1 > d2) && (y1 === y2) && (m1 >= m2)) {
+        otpyear = 0;
     }
 
     if (otpmonth === 12) {
-        otpyear = 1;
-        otpmonth = 0
+        otpmonth = 0;
     }
 
-    if (m1 < m2) {
+    if ((m1 < m2) && (y1 === y2)) {
         otpyear = 0;
         otpmonth = m2 - m1;
     }
+
+
     if ((m1 > m2) && (y1 >= y2)) {
         alert('invalid input, not born yet');
         return;
@@ -48,3 +56,4 @@ function ageCalculator() {
     document.getElementById('month').innerHTML = otpmonth;
     document.getElementById('day').innerHTML = otpday;
 }
+
